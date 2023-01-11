@@ -31,11 +31,8 @@ const IndexPage = () => {
 
   function reState(x: any): void {
     if (x) {
-
       let scoreA = x[0], scoreB = x[1];
       let setA = x[2], setB = x[3];
-      // console.log(scoreA);
-      
       set_score_a(scoreA)
       set_score_b(scoreB)
       set_set_a(setA)
@@ -45,34 +42,10 @@ const IndexPage = () => {
 
   function addScoreA(): void {
     reState(addScoreTeamA());
-    // let x: any = addScoreTeamA()
-    // if (x) {
-
-    //   let scoreA = x[0], scoreB = x[1];
-    //   let setA = x[2], setB = x[3];
-    //   // console.log(scoreA);
-      
-    //   set_score_a(scoreA)
-    //   set_score_b(scoreB)
-    //   set_set_a(setA)
-    //   set_set_b(setB)
-    // }
   }
 
   function addScoreB(): void {
     reState(addScoreTeamB());
-    // let x: any = addScoreTeamB()
-    // if (x) {
-    //   let scoreA = x[0], scoreB = x[1];
-    //   let setA = x[2], setB = x[3];
-    //   // console.log(scoreA);
-      
-    //   set_score_a(scoreA)
-    //   set_score_b(scoreB)
-    //   set_set_a(setA)
-    //   set_set_b(setB)
-    // }
-
   }
 
   function subtractScoreA(): void {
